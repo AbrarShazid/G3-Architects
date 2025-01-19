@@ -33,7 +33,7 @@ body {
 }
 .cmn-h5 {
   color: var(--gray);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .cmn-p {
@@ -52,16 +52,13 @@ body {
   font-weight: 600;
   border: none;
 }
-
 .display-flex {
   display: flex;
 }
-
 /* header style  */
 #hero {
   background-color: var(--bg);
 }
-
 /* navbar styles here  */
 #hero > .navbar {
   padding: calc(3px + 2vh) 7vw;
@@ -112,12 +109,10 @@ body {
 .banner-img > img {
   width: 100%;
 }
-
 /* quick list as team style here  */
 #quick-list {
   padding: 4vw 15vw;
 }
-
 .team {
   display: flex;
   align-items: center;
@@ -206,7 +201,7 @@ body {
   margin: calc(2vh + 5px) 0 calc(8vh + 8px) 0;
 }
 .fact-container {
-  margin-left: calc(2vw + 4px);
+  margin-left: calc(1vw + 4px);
   margin-right: calc(2vw + 4px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -224,10 +219,9 @@ body {
   color: #424242;
   margin: 9px 0 5px 0;
 }
-
 /* sponsor section style here  */
 #sponsor {
-  margin: calc(15vh + 10px) 10vw 18vh 10vw;
+  margin: calc(15vh + 10px) 10vw 10vh 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,6 +242,17 @@ body {
 .sponsor-img > img {
   width: 70%;
   filter: grayscale(100%);
+}
+/* footer style  */
+#foot {
+  margin: calc(10vh + 15px) 14vw 20vh 14vw;
+  border-radius: 8px;
+  background: var(--bg);
+  padding: calc(5vh + 5px) 0;
+  text-align: center;
+}
+#foot > h5 {
+  font-weight: 400;
 }
 /* responsive for mobile  */
 @media screen and (max-width: 575px) {
@@ -337,7 +342,6 @@ body {
     grid-template-columns: repeat(1, 1fr);
     gap: calc(2vh + 1px);
   }
-
   #sponsor {
     margin: calc(3vh + 2px) 5vw 10vh 5vw;
     gap: 10px;
@@ -350,6 +354,10 @@ body {
   }
   .sponsor-img > img {
     width: 80%;
+  }
+  /* footer for mobile  */
+  #foot {
+    margin: calc(5vh + 5px) 0 0 0;
   }
 }
 /* responsive for tablet  */
@@ -375,7 +383,6 @@ body {
   .banner-content > h1 {
     font-size: 2.25rem;
   }
-
   #quick-list {
     padding: 4vw 10%;
   }
@@ -416,8 +423,10 @@ body {
   .fact-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2vw;
   }
-
-
+  #foot {
+    margin: calc(5vh + 5px) 0 0 0;
+  }
 }
